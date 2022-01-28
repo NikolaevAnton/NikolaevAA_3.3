@@ -15,6 +15,7 @@ struct CustomButton: View {
     
     private func logOut() {
         userManager.name = ""
+        userManager.isRegistred()
         userManager.isRegister = false
     }
     

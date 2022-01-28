@@ -10,8 +10,9 @@ import SwiftUI
 @main
 struct NikolaevAA_3_3App: App {
     @StateObject private var userManager = UserManager()
-    
+   
     var body: some Scene {
+        
         WindowGroup {
             StarterView()
                 .environmentObject(userManager)

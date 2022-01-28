@@ -30,11 +30,7 @@ struct RegisterView: View {
     }
     
     private func registerUser() {
-        if userManager.name.count < 3 {
-            userManager.isRegister = false
-        } else {
-            userManager.isRegister = true
-        }
+        userManager.isRegistred()
     }
 }
 

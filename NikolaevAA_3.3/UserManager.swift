@@ -9,6 +9,18 @@ import Foundation
 import SwiftUI
 
 class UserManager: ObservableObject {
-    @Published var isRegister = false
+    @AppStorage("isRegister", store: .standard) var isRegister = false
     @AppStorage("name", store: .standard) var name = ""
+    
+    func isRegistred() {
+        isRegister = name.count > 2
+    }
+    
+    init() {
+        isRegistred()
+    }
+    
+    deinit {
+        isRegistred()
+    }
 }

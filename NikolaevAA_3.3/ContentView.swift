@@ -20,7 +20,6 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .padding(.top, 100)
             Spacer()
-            //ButtonView(timer: timer)
             CustomButton(startButton: true, timer: timer)
             Spacer()
             CustomButton(startButton: false, timer: timer)

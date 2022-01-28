@@ -14,7 +14,8 @@ struct CustomButton: View {
     @EnvironmentObject private var userManager: UserManager
     
     private func logOut() {
-        userManager.isRegister.toggle()
+        userManager.name = ""
+        userManager.isRegister = false
     }
     
     var body: some View {
